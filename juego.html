@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Runner - Arturo Thomas</title>
+    <link rel="stylesheet" href="juego.css">
+</head>
+<body class="game-page-body">
+
+    <nav class="game-nav">
+        <a href="index.html" class="btn-back">← Volver al Portfolio</a>
+    </nav>
+
+    <main class="game-page-content">
+        <section id="tech-runner-section" class="game-section-isolated">
+            <h2>Bugs & Cables: Tech Runner</h2>
+            <p>¡Esquiva los errores del sistema y los cables sueltos para mantener el servidor en línea!</p>
+            
+            <div class="game-container">
+                <div id="score-board">Puntuación: <span id="current-score">0</span> | Récord: <span id="high-score">0</span></div>
+                <canvas id="gameCanvas" width="800" height="250"></canvas>
+                <div id="game-over-screen" class="hidden">
+                    <h3>¡SISTEMA CAÍDO! (Game Over)</h3>
+                    <button id="retry-btn">Reconectar Servidor</button>
+                </div>
+            </div>
+            <p class="controls-hint">Controles: Presiona la <strong>Barra Espaciadora</strong>, <strong>Flecha Arriba</strong> o toca la pantalla para Saltar.</p>
+        </section>
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
